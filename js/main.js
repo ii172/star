@@ -112,4 +112,7 @@ $(".sec6_slide .regular").slick({
   slidesToScroll: 5
 });
 
+
+
+
 });

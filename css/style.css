@@ -440,12 +440,25 @@ h3 {
   height: 385px;
   box-sizing: border-box;
 }
+#section2 .text_on p{
+  color: #fff;
+  font-weight: bold;
+
+}
+/* #section2 .text_on h2{
+  color: #fff;
+}
+#section2 .text_on span{
+  color: #fff;
+  border-color: #000;
+} */
 #section2 .text_on {
   display: none;
 }
 #section2 .inner .clinic:hover .text_on {
   display: block;
 }
+
 #section2 .inner .clinic:hover .text_off {
   display: none;
 }
