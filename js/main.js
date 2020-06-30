@@ -26,7 +26,7 @@ $(".all_see").click(function () {
         $('#quick').stop().animate({top:100},500);  //animate 위치관련된 css만쓸수있음
         // $('#quick').show() 변경가능
       }else{
-         $('#quick').stop().animate({top:400},500); //<-슬라이더랑 안겹치게하기위해
+         $('#quick').stop().animate({top:500},500); //<-슬라이더랑 안겹치게하기위해
          // $('#quick').fadeOut() 변경가능
       }
      })
