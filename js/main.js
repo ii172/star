@@ -26,7 +26,7 @@ $(".all_see").click(function () {
         $('#quick').stop().animate({top:100},500);  //animate 위치관련된 css만쓸수있음
         // $('#quick').show() 변경가능
       }else{
-         $('#quick').stop().animate({top:500},500); //<-슬라이더랑 안겹치게하기위해
+         $('#quick').stop().animate({top:450},500); //<-슬라이더랑 안겹치게하기위해
          // $('#quick').fadeOut() 변경가능
       }
      })
@@ -83,9 +83,12 @@ $('.rolling').vTicker({
 
 //메인슬라이드
 $(".lazy").slick({
+    autoplay: true,
     dots:true,
     lazyLoad: 'ondemand',
-    infinite: true
+    infinite: true,
+    pauseOnHover : true
+    
   });
 //시술소개 슬라이드  
 $("#section3 .regular").slick({
