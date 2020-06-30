@@ -17,8 +17,19 @@ $(".all_see").click(function () {
   //언어
   $('.language').click(function() {
     $('.language_mn').slideToggle('slow')
-
     });
+
+    $('#quick').effect('Bounce',"",500);
+    //스크롤시 퀵메뉴 고정위치 바꾸기
+    $(window).scroll(function(){
+      if($(document).scrollTop()>=300){   //scrollTop 바디크기의 300
+        $('#quick').stop().animate({top:100},500);  //animate 위치관련된 css만쓸수있음
+        // $('#quick').show() 변경가능
+      }else{
+         $('#quick').stop().animate({top:400},500); //<-슬라이더랑 안겹치게하기위해
+         // $('#quick').fadeOut() 변경가능
+      }
+     })
 
 // //공지사항 롤링
 //   var height =  $(".notice").height();
@@ -61,7 +72,7 @@ $('.rolling').vTicker({
   // 스크롤 애니메이션  
   animation: 'ture',  
   // 마우스 over 일때 멈출 설정  
-  mousePause: false,  
+  mousePause: 'ture',  
   // 한번에 보일 리스트수(default: 2)  
   showItems: 4,  
   // 스크롤 컨테이너 높이(default: 0)  

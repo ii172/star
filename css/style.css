@@ -99,7 +99,7 @@ h3 {
 /*************킥메뉴******************/
 #quick {
   position: fixed; /*fixed 고정*/
-  top: 300px; right: 0; z-index: 9998;
+  top: 400px; right: 0px; z-index: 9998;
 }
 #quick li{
   width: 70px;
@@ -258,11 +258,11 @@ h3 {
 }
 .slick-prev {
     background:url(../images/left_arrow.png);
-    left: 50px;
+    left: 100px;
 } /*왼쪽 화살표*/
 .slick-next {
     background:url(../images/right_arrow.png);
-    right: 50px;
+    right: 100px;
 } /*오른쪽 화살표*/
 .slick-dots {
   position: absolute;
@@ -303,20 +303,19 @@ h3 {
 	text-align: center;
 	line-height: 40px;
 }
-.notice{ 
-	width: 500px;
+.notice{
+	min-width: 500px;
 	height:40px;
 	position: absolute;
 	bottom: 4.5px;
 	left: 442.8px;
 	z-index: 103;
-	overflow: hidden; 
+	overflow: hidden;
 	background-color: rgba(104, 104, 104, 0.8);
 }
 .notice .rolling p{
 	width: 200px;
 	color: #fff;
-
 }
 .rolling{
 	width:500px;
@@ -327,21 +326,18 @@ h3 {
 	width:500px; 
 	height:40px; 
 	line-height:40px;
-
 }
 .rolling li a{
 	padding-left: 40px;
 	font-size: 1rem;
 	color: #eee;
 }
-
 .rolling li a:last-child{
 	float: right;
 	padding-right: 10px;
-
 }
 .Popular_search{
-	width: 500px;
+	min-width: 500px;
 	height:40px;
 	position: absolute;
 	bottom: 4.5px;
@@ -645,6 +641,14 @@ h3 {
   display: block;
   clear: both;
 }
+#section6 .slick-prev {
+  background:url(../images/left_arrow.png);
+  left: 10px;
+} /*왼쪽 화살표*/
+#section6 .slick-next {
+  background:url(../images/right_arrow.png);
+  right: 10px;
+} /*오른쪽 화살표*/
 
 /*********************footer****************************/
 
