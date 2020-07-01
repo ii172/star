@@ -95,7 +95,7 @@ $("#section3 .regular").slick({
   dots: true,
   infinite: true,
   slidesToShow: 2,
-  slidesToScroll: 3
+  slidesToScroll: 2
 });
 //치료전후 슬라이드
 $(".sec4_slide .regular").slick({
