@@ -25,14 +25,11 @@
 
     <script src="./js/main.js"></script>
     
-    <style>
-
-    </style>
   </head>
   <div id="quick">
     <ul>
       <li><a href="#"><img src="images/q_mn/q_menu_1.jpg" alt="#"></a></li>
-      <li><a href="#"><img src="images/q_mn/q_menu_2.jpg" alt="#"></a></li>
+
       <li><a href="#"><img src="images/q_mn/q_menu_3.jpg" alt="#"></a></li>
       <li><a href="#"><img src="images/q_mn/q_menu_4.jpg" alt="#"></a></li>
       <li><a href="#"><img src="images/q_mn/q_menu_5.jpg" alt="#"></a></li>
@@ -120,7 +117,7 @@
         ><img src="images/banner.jpg" alt="여름방학이벤트"
       /></a>
       <div class="inner">
-        <button class="pop_close">close</button>
+        <button class="pop_close">X</button>
       </div>
     </div>
     <header id="header">
@@ -133,7 +130,7 @@
             <button>
               <a href="#">
                 <img src="images/national flag/kor1.png" alt="#">
-                <span>한국어 ∨</span>
+                <span>Language</span>
               </a>
             </button>
             <ul class="language_mn">
@@ -156,7 +153,6 @@
           </div>
           
           <button class="all_see">
-            <p>전체보기</p>
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -231,7 +227,7 @@
             </li>
           </ul>
         </nav>
-        <p class="popup_open">open</p>
+        <p class="popup_open">열기</p>
       </div>
     </header>
 
@@ -254,48 +250,53 @@
             </a>
           </div>
         </div>
-        <div class="notice_tit">
-          <p>공지사항</p>
-        </div>
-        <div class="notice">
-          <div class="rolling">
-            <ul>
-              <li>
-                <a href="#">홈페이지 리뉴얼 이벤트 당첨자 발표</a>
-                <a href="#">2020.06.17</a>
-              </li>
-              <li>
-                <a href="#">여름맞이 패키지 할인</a>
-                <a href="#">2020.06.17</a>
-              </li>
-              <li>
-                <a href="#">베스트 후기 이벤트 당첨자 발표</a>
-                <a href="#">2020.06.17</a>
-              </li>
-            </ul>
+        <div class="rolling_inner">
+          <div class="rolling_box">
+            <div class="notice_tit">
+
+              <p>공지사항</p>
+            </div>
+            <div class="notice">
+              <div class="rolling">
+                <ul>
+                  <li>
+                    <a href="#">홈페이지 리뉴얼 이벤트 당첨자 발표</a>
+                    <a href="#">2020.06.17</a>
+                  </li>
+                  <li>
+                    <a href="#">여름맞이 패키지 할인</a>
+                    <a href="#">2020.06.17</a>
+                  </li>
+                  <li>
+                    <a href="#">베스트 후기 이벤트 당첨자 발표</a>
+                    <a href="#">2020.06.17</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="Popular_search_tit">
+              <p>최근 인기 검색어</p>
+            </div>
+            <div class="Popular_search">
+              <div class="rolling">
+                <ul>
+                  <li>
+                    <a href="#">1. 여드름 캐어</a>
+                    <a href="#">NEW</a>
+                  </li>
+                  <li>
+                    <a href="#">2. 기미 · 잡티 </a>
+                    <a href="#">NEW</a>
+                  </li>
+                  <li>
+                    <a href="#">3. 안티에이징</a>
+                    <a href="#">NEW</a>
+                  </li>
+                </ul>
+              </div>
+            </div> 
           </div>
         </div>
-        <div class="Popular_search_tit">
-          <p>최근 인기 검색어</p>
-        </div>
-        <div class="Popular_search">
-          <div class="rolling">
-            <ul>
-              <li>
-                <a href="#">1. 여드름 캐어</a>
-                <a href="#">NEW</a>
-              </li>
-              <li>
-                <a href="#">2. 기미 · 잡티 </a>
-                <a href="#">NEW</a>
-              </li>
-              <li>
-                <a href="#">3. 안티에이징</a>
-                <a href="#">NEW</a>
-              </li>
-            </ul>
-          </div>
-          </div> 
       </section>
      
 
@@ -404,7 +405,9 @@
       <section id="section4">
         <div class="inner">
           <div class="sec4_tit">
-            <img src="images/b&a_tit.jpg" alt="#">
+            <a href="#">
+              <img src="images/b&a_tit.jpg" alt="#">
+            </a>
           </div>
           <div class="sec4_slide">
             <h2>치료 전후 사진</h2>

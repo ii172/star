@@ -87,15 +87,15 @@ h3 {
 }
 .pop_close {
   position: absolute;
-  top: -55px;
-  right: 5px;
+  top: -63px;
+  right: 0px;
   background: none;
-  border: 1px solid #fff;
-  padding: 3px;
-  font-size: 1rem;
+  border:none;
+  width: 50px;
+  font-size: 2rem;
+  font-weight: lighter;
   cursor: pointer;
   color: #fff;
-
 }
 /***************팝업끝************/
 /*************킥메뉴******************/
@@ -130,36 +130,46 @@ h3 {
 }
 
 #header .language {
-  padding-top: -5px;
+
   display: inline-block;
   position: relative;
-  width: 110px;
+  width: 120px;
+  height: 20px;
   text-align: center;
   cursor: pointer;
-  padding-right: 10px;
+  padding-right: 8px;
+}
+#header .language button a img{
+ 
+}
+#header .language a span{
+  line-height: 30px;
+  color: #666;
 
 }
+
 #header .header_top button {
   background-color: #fff;
   border: none;
 }
 #header .language .language_mn {
   position: absolute;
-  top: 25px;
-  left: 13px;
-  width: 90px;
+  top: 28px;
+  left: 6px;
+  width: 80px;
   background-color: #fff;
   border: 1px solid #eee;
+  border-right: 0;
   z-index: 9999;
   display: none;
 }
+
 #header .language_mn img{
   width: 100%;
 }
 #header .language_mn li a{
-  
   display: block;
-  width: 90px;
+  width: 80px;
   text-align: center;
   padding-bottom: 3px;
   border-bottom: 1px solid #eee;
@@ -167,22 +177,18 @@ h3 {
 
 /*전체보기*/
 .all_see{
-
   width: 70px;
-  
   cursor: pointer;
-  
 }
 .all_see span{
-  width: 10px;
-  height: 2px;
-  background-color: #000;
+  width: 20px;
+  height: 3px;
+  background-color: rgb(63, 63, 63);
   display: block;
   margin-top: 3px;
+  transform:translate( 0, 3px);
 }
-.all_see p{
-  float: right;
-}
+
 /*메뉴*/
 #header #nav {
   width: calc(100% - 190px);
@@ -222,15 +228,16 @@ h3 {
 
 #header .popup_open {
   position: absolute;
-  top: 0;
-  line-height: 20px;
+  top: 0px;
   right: 0px;
+  line-height: 18px;
   width: 50px;
   text-align: center;
-  color: #e4ad7a;
-  border: 1px solid #e4ad7a;
-  border-top: 0px;
+  color: #000;
   cursor: pointer;
+  border: 1px solid #9a9af4;
+  border-top: 0;
+  font-size: 0.8rem;
 }
 #header:after {
   content: "";
@@ -255,8 +262,8 @@ h3 {
   position: absolute;
   top: 40%;
   z-index: 9999;
-  width: 45px;
-  height: 45px;
+  width: 90px;
+  height: 90px;
   background: none;
   border: none;
   display: block;
@@ -267,11 +274,11 @@ h3 {
   margin: 0 5px;
 }
 .slick-prev {
-    background:url(../images/left_arrow.png);
+    background:url(../images/rotlqkf.png)no-repeat 0 50%;;
     left: 100px;
 } /*왼쪽 화살표*/
 .slick-next {
-    background:url(../images/right_arrow.png);
+    background:url(../images/tlqkffusdk.png)no-repeat 0 50%;
     right: 100px;
 } /*오른쪽 화살표*/
 .slick-dots {
@@ -291,13 +298,79 @@ h3 {
   height: 15px;
   background-color: rgba(230, 230, 230, transparent);
   border-radius: 50%;
-  border: 
-  1px solid rgb(230, 230, 230, 0.8);
+  border: 1px solid rgb(230, 230, 230, 0.8);
 }
 .slick-dots li.slick-active button {
   background-color: rgba(0, 0, 0, 0.5);
 }
 /*슬라이더 notice*/
+.rolling_inner{
+  max-width: 1280px;
+  min-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+.rolling_box{
+  width: 100%;
+  position: absolute;
+  top:-45px;
+  left: 22px;
+  background-color: rgba(104, 104, 104, 0.8);
+  z-index: 103;
+}
+.rolling ul{
+	width: 500px;
+	height:40px;
+	line-height:40px;
+}
+.rolling li a{
+	padding-left: 40px;
+	font-size: 1rem;
+	color: #eee;
+}
+.rolling_box .notice_tit{
+  float: left;
+  width: 100px;
+  height: 40px;
+
+  border-right: 1px solid #666;
+}
+.rolling_box .notice_tit p{	
+  color: #fff;
+	text-align: center;
+  line-height: 40px;
+}
+.rolling_box .notice{
+  float: left;
+  width: 500px;
+  height:40px;
+  overflow: hidden;
+  border-right: 1px solid #000;
+}
+.rolling li a:last-child{
+	float: right;
+	padding-right: 20px;
+}
+.Popular_search_tit{
+  float: left;
+	width: 150px;
+	height: 40px;
+  border-right: 1px solid #666;
+}
+.Popular_search{
+  float: left;
+  width: 500px;
+	height:40px;
+	overflow: hidden; 
+  margin-left: 20px;
+} 
+.Popular_search_tit p{
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+}
+
+/* 
 .notice_tit{
 	position: absolute;
 	bottom:4.5px;
@@ -369,7 +442,7 @@ h3 {
 	color: #fff;
 	text-align: center;
 	line-height: 40px;
-}
+} */
 /*주요클리닉*/
 #section2 {
   margin-top: 180px;
@@ -526,15 +599,18 @@ h3 {
   width: 100%;
 }
 #section3 .regular .slick-prev{
+  background:url(../images/left_arrow.png)no-repeat 0 50%;;
     position: absolute;
-    top:50%;
-    left:0px    
+    top:40%;
+    left:5px    
 }
-#section3 .regular .slick-arrow{
+#section3 .regular .slick-next{
+  background:url(../images/right_arrow.png)no-repeat 0 50%;
     position: absolute;
-    top:50%;
-    right:0px 
+    top:40%;
+    right:-45px 
 }
+
 #section3:after {
   content: "";
   display: block;
@@ -561,10 +637,12 @@ h3 {
   width: 100%;
 }
 #section4 .sec4_slide h2{
-	display: inline-block;	
+  display: inline-block;
+  margin-bottom: 8px;
 }
 #section4 .sec4_slide h3{
-	display: inline;
+  display: inline;
+  opacity: 60%;
 	margin-left: 10px;
 }
 #section4 .sec4_slide .regular{
@@ -580,8 +658,9 @@ h3 {
   width: 35px;
   position: absolute;
   top:50%;
-  left: 220px;
+  left: 215px;
   z-index: 300;
+
 }
 #section4 .sec4_slide .regular img{
   width: 100%;
@@ -592,22 +671,24 @@ h3 {
   top: 10px;
   right: 10px;
   z-index: 9999;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background: none;
   border: none;
   display: block;
   text-indent: -9999px;
 }
 #section4 .sec4_slide .slick-prev {
+
   background:url(../images/Untitled-2.png)no-repeat;
   top: -50px;
-  left: 1200px;
+  left: 320px;
 } /*왼쪽 화살표*/
 #section4 .sec4_slide .slick-next {
+
   background:url(../images/Untitled-1.png)no-repeat;
   top:-50px;
-  right: 0px;
+  left: 360px;
 } /*오른쪽 화살표*/
 #section4 .sec4_slide button{
   display: none;
@@ -679,7 +760,7 @@ h3 {
 #footer {
   padding-top: 30px;
   width: 100%;
-  height: 90px;
+  height: 100px;
   background-color: #eee;
 }
 #footer .logo {
